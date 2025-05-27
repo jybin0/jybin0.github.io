@@ -218,32 +218,18 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-    .speech-bubble,
-    .speech-bubble-2,
-    .speech-bubble-3,
-    .speech-bubble-4 {
-        display: none;
-    }
-    @media screen and (max-width: 768px) {
-        .intro_img {
-            width: 180px;
-            height: 180px;
-        }
+  /* 말풍선 전부 숨기기 */
+  .speech-bubble,
+  .speech-bubble-2,
+  .speech-bubble-3,
+  .speech-bubble-4 { display: none; }
 
-        .intro_content h1 {
-            font-size: 1.5rem;
-        }
-
-        .intro_content b {
-            font-size: 1.7rem;
-        }
-
-        .speech-bubble {
-            font-size: 0.85rem;
-            padding: 10px 15px;
-        }
-    }
+  /* 소개 이미지·텍스트 크기 조정 */
+  .intro_img          { width: 180px; height: 180px; }
+  .intro_content h1   { font-size: 1.5rem; }
+  .intro_content b    { font-size: 1.7rem; }
 }
+
 footer
 {
     text-align: center;
