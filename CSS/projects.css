@@ -1,0 +1,168 @@
+/* 전체 배경 */
+body {
+    background: url("/image/body_background_img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 전체 레이아웃 */
+.container {
+    margin: 0 auto;
+    width: 80%;
+    height: 85vh;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.836);
+    box-shadow: 0 14px 28px rgba(121, 121, 121, 0.25), 10px 10px 10px rgba(94, 94, 94, 0.22);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+/* 위쪽 네비게이션 */
+nav.nav-container {
+    position: relative;
+    top: 65px;
+    width: 80%;
+    height: 7vh;
+    margin: 0 auto;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgba(196, 174, 255, 0.418);
+    padding-top: 30px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #422f6d;
+}
+.link {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all 0.3s ease;
+
+}
+
+.link span {
+    position: relative;
+    bottom: 35px;
+    left: 550px;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 마우스 올렸을 때 효과 */
+.link span:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+/* 프로젝트 페이지 구조 */
+.project-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.project-image {
+    flex: 1;
+    background: #fff url("/image/project_placeholder.png") center/cover no-repeat;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    min-height: 400px;
+}
+.project-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.project-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+.project-tagline {
+    font-size: 16px;
+    color: #555;
+    margin: 4px 0;
+}
+.project-features,
+.project-links,
+.project-stack,
+.project-summary {
+    background: #f8f9ff;
+    border: 1px dashed #ccc;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.project-summary {
+    flex: 2;
+    min-height: 120px;
+}
+.project-stack {
+    flex: 1;
+    min-height: 120px;
+}
+.project-features {
+    min-height: 200px;
+}
+.project-links a {
+    display: inline-block;
+    margin-right: 12px;
+    color: #422f6d;
+    font-weight: bold;
+}
+/* 요약+스택 둘이 나란히 */
+.top-info {
+    display: flex;
+    gap: 20px;
+}
+/* 페이지 네비게이션 (슬라이드 표시) */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+.pagination .dot {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+.pagination .dot.active {
+    background: #6a5acd;
+    border-color: #6a5acd;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    position: relative;
+    left: 20px;
+    color: #424242;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+    .project-wrapper {
+        flex-direction: column;
+    }
+    .top-info {
+        flex-direction: column;
+    }
+}
