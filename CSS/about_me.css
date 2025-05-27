@@ -1,0 +1,238 @@
+/* 전체 배경 */
+body {
+    background: url("/image/body_background_img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 전체 레이아웃 */
+.container {
+    margin: 0 auto;
+    width: 80%;
+    height: 85vh;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.836);
+    box-shadow: 0 14px 28px rgba(121, 121, 121, 0.25), 10px 10px 10px rgba(94, 94, 94, 0.22);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+/* 위쪽 네비게이션 */
+nav.nav-container {
+    position: relative;
+    top: 65px;
+    width: 80%;
+    height: 7vh;
+    margin: 0 auto;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgba(196, 174, 255, 0.418);
+    padding-top: 30px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #422f6d;
+}
+.link {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all 0.3s ease;
+
+}
+
+.link span {
+    position: relative;
+    bottom: 35px;
+    left: 550px;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 마우스 올렸을 때 효과 */
+.link span:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    background: #f8f9ff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    max-width: 900px;
+    margin-left: 40px;
+    margin-top: 85px;
+    gap: 30px;
+    border: 1px dashed #ccc;
+}
+
+.profile-img {
+    background-image: url("/image/me.png");
+    background-size: cover;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.profile-info h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.profile-info h2 span {
+    font-size: 20px;
+    color: #d18d8d;
+    display: block;
+    margin-top: 2px;
+}
+
+.hello {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #3d3d3d;
+}
+
+.details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #333;
+}
+
+.details li {
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.contact-box {
+    position: relative;
+    bottom: 329px;
+    left: 480px;
+    width: 30%;
+    height: 265px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px dashed #ccc;
+    background: #f8f9ff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.skills-box {
+    position: relative;
+    bottom: 330px;
+    width: 92%;
+    height: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fafafa;
+    border-radius: 12px;
+    border: 1px dashed #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.skills-container
+{
+  display: flex;
+  gap:90px;
+  align-items: center;
+  margin-left:20px;
+  margin-right:20px;
+  margin-top: 30px;
+
+}
+.skill {
+    flex-direction: column;
+    display: flex;
+    align-items: cener;
+    margin: 12px 0;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+
+.skill-name {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 100px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
+
+.dots {
+    display: flex;
+    gap: 4px;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.dot.fill {
+    background-color: #6a5acd;
+}
+
+/* 각 기술별 아이콘 설정 */
+.html-icon {
+    position: relative;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/732/732212.png");
+}
+
+.css-icon {
+
+  background-image: url("https://cdn-icons-png.flaticon.com/512/732/732190.png");
+}
+
+.js-icon {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/5968/5968292.png");
+}
+
+.cp-icon {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/6132/6132222.png");
+    /* C logo */
+}
+
+.ppt-icon {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/888/888853.png");
+    /* PPT logo */
+}
+.ppt-icon, .cp-icon, .js-icon, 
+.css-icon, .html-icon
+{
+    width:100px; 
+    height: 100px;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    left: 20px;
+    color: #424242;
+}

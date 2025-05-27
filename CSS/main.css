@@ -243,3 +243,12 @@ a {
             padding: 10px 15px;
         }
     }
+}
+footer
+{
+    text-align: center;
+    position: relative;
+    bottom:120px;
+    left:20px;
+    color:#7a7a7a;
+}
